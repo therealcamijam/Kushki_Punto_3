@@ -1,0 +1,33 @@
+curl --location 'https://api-uat.kushkipagos.com/subscriptions/v1/card' \
+--header 'Content-Type: application/json' \
+--header 'Private-Merchant-Id: 7721a4732dcc4ffea87db8270c7316a7' \
+--data-raw '{
+  "token": "f4827a1540364672a376b9de12e10d55",
+  "planName": "Test_plan",
+  "periodicity": "monthly",
+  "contactDetails": {
+    "documentType": "CC",
+    "documentNumber": "1009283738",
+    "email": "testcamilo@test.com",
+    "firstName": "Camilo",
+    "lastName": "Perez",
+    "phoneNumber": "+593912345678"
+  },
+  "amount": {
+    "subtotalIva": 25,
+    "subtotalIva0": 0,
+    "ice": 0,
+    "iva": 0,
+    "currency": "PEN"
+  },
+  "startDate": "2023-06-30",
+  "metadata": {
+    "plan": {
+      "fitness": {
+        "prueba_30_dìas": "include",
+        "HBO": "include",
+        "Netflix": "include"
+      }
+    }
+  }
+}'
