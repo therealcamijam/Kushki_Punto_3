@@ -1,0 +1,16 @@
+curl --location 'https://api-uat.kushkipagos.com/subscriptions/v1/card/1688094782524000/authorize' \
+--header 'Content-Type: application/json' \
+--header 'Private-Merchant-Id: 7721a4732dcc4ffea87db8270c7316a7' \
+--data-raw '{
+  "amount": {
+    "ice": 0,
+    "iva": 0,
+    "subtotalIva": 0,
+    "subtotalIva0": 25,
+    "currency": "PEN"
+  },
+  "name": "Camilo",
+  "lastName": "Perez",
+  "email": "user@example.com",
+  "fullResponse": "v2"
+}'
