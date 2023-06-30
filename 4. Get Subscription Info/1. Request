@@ -1,0 +1,4 @@
+curl --location 'https://api-uat.kushkipagos.com/subscriptions/v1/card/search/1688096212262000' \
+--header 'Content-Type: application/json' \
+--header 'Private-Merchant-Id: 7721a4732dcc4ffea87db8270c7316a7' \
+--data ''
