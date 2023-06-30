@@ -1,0 +1,29 @@
+curl --location --request DELETE 'https://api-uat.kushkipagos.com/v1/charges/458691287601881888' \
+--header 'Content-Type: application/json' \
+--header 'Private-Merchant-Id: 7721a4732dcc4ffea87db8270c7316a7' \
+--data '{
+  "fullResponse": "v2",
+  "amount": {
+    "subtotalIva": 10,
+    "subtotalIva0": 0,
+    "ice": 0,
+    "iva": 0,
+    "currency": "PEN"
+  },
+  "webhooks": [
+    {
+      "events": [
+        "approvedTransaction"
+      ],
+      "headers": [
+        {
+          "label": "json",
+          "value": "12"
+        }
+      ],
+      "urls": [
+        "https://webhook.site/dabe015d-35ce-4c2c-a585-b2262c3fd02d"
+      ]
+    }
+  ]
+}'
